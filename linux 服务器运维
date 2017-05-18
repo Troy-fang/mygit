@@ -1,0 +1,21 @@
+一,防火墙实验
+默认网关：route add default gw 10.0.0.1
+添加路由：route add -net xx.xx.xx.xx/24 dev eth*
+关闭防火墙：iptables -F
+网卡抓包：tcpdump -i eth*
+配置文件修改 ipv4 转发： vim /etc/sysctl.conf
+查看nat表 iptables -t nat -L -n
+
+
+
+
+
+
+
+
+
+
+quagga    网络主机包
+修改配置文件 vim /etc/quagga/zebra.conf
+开源route方案   openwrt routeros
+扫描工具：nmap 
